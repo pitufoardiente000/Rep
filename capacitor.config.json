@@ -2,5 +2,9 @@
   "appId": "com.tuempresa.carplayer",
   "appName": "CarPlayer Pro",
   "webDir": "www",
-  "bundledWebRuntime": false
+  "bundledWebRuntime": false,
+  "server": {
+    "url": "https://reproductordefinitivo.gatito1.workers.dev/?token=carplayer2026",
+    "cleartext": true
+  }
 }
