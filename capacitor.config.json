@@ -1,6 +1,20 @@
 {
-  "appId": "com.tuempresa.carplayer",
-  "appName": "CarPlayer Pro",
-  "webDir": "www",
-  "bundledWebRuntime": false
+"appId": "com.carplayer.pro",
+"appName": "CarPlayer Pro",
+"webDir": "www",
+"bundledWebRuntime": false,
+"plugins": {
+"BackgroundRunner": {
+"label": "com.carplayer.pro.background",
+"src": "background.js",
+"event": "playback",
+"repeat": true,
+"interval": 15
+}
+},
+"android": {
+"allowMixedContent": true,
+"captureInput": true,
+"webContentsDebuggingEnabled": true
+}
 }
