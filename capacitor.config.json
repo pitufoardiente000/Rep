@@ -1,6 +1,6 @@
 {
   "appId": "com.tuempresa.carplayer",
   "appName": "CarPlayer Pro",
-  "webDir": ".",
+  "webDir": "www",
   "bundledWebRuntime": false
 }
