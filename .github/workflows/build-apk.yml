@@ -27,9 +27,13 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    - name: Initialize Capacitor Android
+    - name: Prepare Web Directory
       run: |
-        npx cap init "CarPlayer Pro" "com.tuempresa.carplayer" --web-dir "." --yes || true
+        mkdir -p www
+        cp index.html www/
+
+    - name: Sync Capacitor Android
+      run: |
         npx cap add android || true
         npx cap sync android
 
